@@ -8,11 +8,12 @@ public class DeclaringNewMethod {
     }
 
     public static double findMaxExpense(double[] expenses) {
-        double maxExpense = 0;
+        double maxExpense = expenses[0];
 
-        for (int i = 0; i < expenses.length; i++) {
-            if (expenses[i] > maxExpense)
-                maxExpense = expenses[i];
+        for (double expense : expenses) {
+            if (expense > maxExpense) {
+                maxExpense = expense;
+            }
         }
         return maxExpense;
     }
