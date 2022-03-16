@@ -1,6 +1,6 @@
 package main.java;
 
-public class Start {
+public class MetodReturn {
     public static void main(String[] args) {
 
         final String highestGrossingFilm = findHighestGrossingFilm();
