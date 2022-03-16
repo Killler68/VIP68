@@ -7,6 +7,13 @@ public class Start {
         System.out.println("Самый кассовый фильм: " + highestGrossingFilm);
     }
     public static String findHighestGrossingFilm() {
+        /** 
+        * если заранее известно что будет лежать в переменной, дай ей осмысленное название
+        * например titanicFiml так же и с переменной income1 -> titcanicInocome
+        * и если значение изменяться не будет, сделай ее final
+        * https://vertex-academy.com/tutorials/ru/modifikator-final/
+        * так же и с остальными переменными
+        */
         String film1 = "Титаник";
         int income1 = 2194;
 
