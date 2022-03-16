@@ -10,7 +10,6 @@ public class OperatorReturn {
 
     public static void doCommand() {
         Scanner scanner = new Scanner(System.in);
-
         while (true) {
             System.out.println("Что вы хотите сделать?");
             System.out.println("1 - Получить совет о покупке евро");
