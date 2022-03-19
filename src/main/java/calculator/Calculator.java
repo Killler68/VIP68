@@ -12,27 +12,22 @@ public class Calculator {
         String operator = scanner.next();
         System.out.println("Введите второе число");
         int b = scanner.nextInt();
+        System.out.println( calc(operator, a, b));
 
     }
     public static  int calc ( String operator, int a, int b) {
-        int c;
         switch (operator) {
             case "+":
-                c = a + b;
-                break;
+                return a + b;
             case "-":
-                c = a - b;
-                break;
+                return a - b;
             case "*":
-                c = a * b;
-                break;
+               return a * b;
             case "/":
-                c = a / b;
-                break;
+                return a / b;
             default:
-                c = a = b;
+                return 0;
         }
-        return c;
     }
 }
 
