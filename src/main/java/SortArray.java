@@ -31,13 +31,18 @@ public class SortArray {
      * */
 
     public static void main(String[] args) {
+        fillCities();
+        printCities();
+    }
 
-        
+    private static void fillCities() {
 
+    }
+
+    private static void printCities() {
         System.out.println(ExampleArrays.TAMBOV + " / " + tambov);
         System.out.println(ExampleArrays.MOSCOW + " / " + moscow);
         System.out.println(ExampleArrays.KIEV + " / " + kiev);
         System.out.println(ExampleArrays.TULA + " / " + tula);
-
     }
 }
