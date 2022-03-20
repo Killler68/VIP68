@@ -18,14 +18,14 @@ public class SortArray {
     /**
      * константы с названиями городов
      * ExampleArrays.TAMBOV, ExampleArrays.MOSCOW, ExampleArrays.KIEV, ExampleArrays.TULA
-     * получение полей пользователя
      *
+     * получение полей пользователя
      * user.getId();
      * user.getName();
      * user.getAge();
      * user.getCity();
      *
-     * получение название города пользователя
+     * получение названия города пользователя
      * user.getCity().getName();
      *
      * */
