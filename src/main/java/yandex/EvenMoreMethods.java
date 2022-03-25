@@ -1,11 +1,12 @@
-package main.java;
-import  java.util.Scanner;
-public class FewClasses {
+package yandex;
+
+import java.util.Scanner;
+
+public class EvenMoreMethods {
+    public static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
         double[] expenses = new double[7];
-        Scanner scanner = new Scanner(System.in);
-        Converter converter = new Converter(); // Создайте объект класса Converter
-
         System.out.println("Сколько денег у вас осталось до зарплаты?");
         double moneyBeforeSalary = scanner.nextDouble();
 
@@ -17,18 +18,17 @@ public class FewClasses {
             int command = scanner.nextInt();
 
             if (command == 1) {
-                System.out.println("Ваши сбережения: " + moneyBeforeSalary + " RUB");
-                System.out.println("В какую валюту хотите конвертировать? Доступные варианты: 1 - USD, 2 - EUR, 3 - JPY.");
-                int currency = scanner.nextInt();
-                converter.convert(moneyBeforeSalary, currency);
-                double rubles;// Вызовите метод класса Converter
+                convert(scanner, moneyBeforeSalary);
             } else if (command == 2) {
                 getAdvice(moneyBeforeSalary, daysBeforeSalary);
             } else if (command == 3) {
-                moneyBeforeSalary = saveExpense(scanner, moneyBeforeSalary, expenses);
+                System.out.println("За какой день вы хотите ввести трату: 1-ПН, 2-ВТ, 3-СР, 4-ЧТ, 5-ПТ, 6-СБ, 7-ВС?");
+                moneyBeforeSalary = saveExpense(moneyBeforeSalary, scanner, expenses);
+
             } else if (command == 4) {
                 printAllExpenses(expenses);
             } else if (command == 5) {
+                findMaxExpense(expenses);
                 System.out.println("Самая большая сумма расходов на этой неделе составила " + findMaxExpense(expenses) + " руб.");
             } else if (command == 0) {
                 System.out.println("Выход");
@@ -39,8 +39,7 @@ public class FewClasses {
         }
     }
 
-    public static double saveExpense(Scanner scanner, double moneyBeforeSalary, double[] expenses) {
-        System.out.println("За какой день вы хотите ввести трату: 1-ПН, 2-ВТ, 3-СР, 4-ЧТ, 5-ПТ, 6-СБ, 7-ВС?");
+    public static double saveExpense(double moneyBeforeSalary, Scanner scanner, double[] expenses) {
         int day = scanner.nextInt();
         System.out.println("Введите размер траты:");
         double expense = scanner.nextDouble();
@@ -102,24 +101,28 @@ public class FewClasses {
             }
         }
     }
-}
 
- class Converter {
-    double rateUSD = 78.5;
-    double rateEUR = 88.7;
-    double rateJPY = 0.75;
-
-    void convert(double rubles, int currency) {
+    public static void convert(Scanner scanner, double moneyBeforeSalary) {
+        double rateUSD = 78.5;
+        double rateEUR = 85;
+        double rateJPY = 0.74;
+        System.out.println("Ваши сбережения: " + moneyBeforeSalary + " RUB");
+        System.out.println("В какую валюту хотите конвертировать? Доступные варианты: 1 - USD, 2 - EUR, 3 - JPY.");
+        int currency = scanner.nextInt();
         if (currency == 1) {
-            System.out.println("Ваши сбережения в долларах: " + rubles / rateUSD);
+            System.out.println("Ваши сбережения в долларах: " + moneyBeforeSalary / rateUSD);
         } else if (currency == 2) {
-            System.out.println("Ваши сбережения в евро: " + rubles / rateEUR);
+            System.out.println("Ваши сбережения в евро: " + moneyBeforeSalary / rateEUR);
         } else if (currency == 3) {
-            System.out.println("Ваши сбережения в иенах: " + rubles / rateJPY);
+            System.out.println("Ваши сбережения в иенах: " + moneyBeforeSalary / rateJPY);
         } else {
             System.out.println("Неизвестная валюта");
         }
     }
 }
+
+
+
+
 
 

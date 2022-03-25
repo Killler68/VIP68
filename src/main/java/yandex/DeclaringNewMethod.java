@@ -1,4 +1,5 @@
-package main.java;
+package yandex;
+
 import java.util.Scanner;
 public class DeclaringNewMethod {
     public static void main(String[] args) {

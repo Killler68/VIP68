@@ -1,4 +1,4 @@
-package main.java;
+package yandex;
 
 import java.util.Scanner;
 

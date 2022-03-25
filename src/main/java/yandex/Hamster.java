@@ -1,4 +1,4 @@
-package main.java;
+package yandex;
 
 public class Hamster {
     // Поля

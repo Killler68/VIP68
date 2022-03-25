@@ -1,4 +1,4 @@
-package main.java;
+package yandex;
 
 public class MoreMethods {
     public static void main(String[] args) {

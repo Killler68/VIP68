@@ -1,4 +1,4 @@
-package main.java;
+package yandex;
 
 public class MetodReturn {
     public static void main(String[] args) {

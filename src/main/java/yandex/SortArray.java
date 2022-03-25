@@ -1,4 +1,4 @@
-package main.java;
+package yandex;
 
 import main.java.examplearray.ExampleArrays;
 import main.java.examplearray.models.User;
