@@ -1,7 +1,7 @@
-package main.java.examplearray
+package examplearray
 
-import main.java.examplearray.models.City
-import main.java.examplearray.models.User
+import examplearray.models.City
+import examplearray.models.User
 
 object ExampleArrays {
 

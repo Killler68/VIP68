@@ -1,4 +1,5 @@
 package yandex;
+
 import  java.util.Scanner;
 public class FewClasses {
     public static void main(String[] args) {

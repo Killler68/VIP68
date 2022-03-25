@@ -1,4 +1,4 @@
-package main.java.examplearray.models
+package examplearray.models
 
 data class User(
     val id: Long,

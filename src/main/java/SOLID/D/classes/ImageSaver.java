@@ -1,6 +1,6 @@
-package main.java.SOLID.D.classes;
+package SOLID.D.classes;
 
-import main.java.SOLID.D.classes.models.Image;
+import SOLID.D.classes.models.Image;
 
 public class ImageSaver {
     public void save(Image image) {}

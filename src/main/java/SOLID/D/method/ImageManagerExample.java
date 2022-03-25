@@ -1,8 +1,8 @@
-package main.java.SOLID.D.method;
+package SOLID.D.method;
 
-import main.java.SOLID.D.classes.ImageDownloader;
-import main.java.SOLID.D.classes.ImageSaver;
-import main.java.SOLID.D.classes.models.Image;
+import SOLID.D.classes.ImageDownloader;
+import SOLID.D.classes.ImageSaver;
+import SOLID.D.classes.models.Image;
 
 public class ImageManagerExample {
     public static void main(String[] args) {

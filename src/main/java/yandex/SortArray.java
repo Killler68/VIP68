@@ -1,7 +1,7 @@
 package yandex;
 
-import main.java.examplearray.ExampleArrays;
-import main.java.examplearray.models.User;
+import examplearray.ExampleArrays;
+import examplearray.models.User;
 
 import java.util.ArrayList;
 import java.util.List;
