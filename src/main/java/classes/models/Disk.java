@@ -1,7 +1,7 @@
-package main.java.classes.models;
+package classes.models;
 
-import main.java.classes.models.unitmodels.DiscCapacity;
-import main.java.classes.models.unitmodels.DiskRpm;
+import classes.models.unitmodels.DiscCapacity;
+import classes.models.unitmodels.DiskRpm;
 
 public class Disk {
 

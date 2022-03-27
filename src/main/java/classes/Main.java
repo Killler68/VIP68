@@ -1,7 +1,7 @@
-package main.java.classes;
+package classes;
 
-import main.java.classes.models.*;
-import main.java.classes.models.unitmodels.*;
+import classes.models.*;
+import classes.models.unitmodels.*;
 
 public class Main {
     public static void main(String[] args) {

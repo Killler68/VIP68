@@ -1,7 +1,7 @@
-package main.java.classes.models;
+package classes.models;
 
-import main.java.classes.models.unitmodels.RamCapacity;
-import main.java.classes.models.unitmodels.RamType;
+import classes.models.unitmodels.RamCapacity;
+import classes.models.unitmodels.RamType;
 
 public class Ram {
 

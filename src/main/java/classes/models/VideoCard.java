@@ -1,6 +1,6 @@
-package main.java.classes.models;
+package classes.models;
 
-import main.java.classes.models.unitmodels.VideoCardModels;
+import classes.models.unitmodels.VideoCardModels;
 
 public class VideoCard {
 

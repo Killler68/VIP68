@@ -1,4 +1,4 @@
-package main.java.classes.models.unitmodels;
+package classes.models.unitmodels;
 
 public enum DiscCapacity {
     GB120,

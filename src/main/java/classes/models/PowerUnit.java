@@ -1,4 +1,4 @@
-package main.java.classes.models;
+package classes.models;
 
 public class PowerUnit {
 

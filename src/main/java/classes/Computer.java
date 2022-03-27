@@ -1,6 +1,6 @@
-package main.java.classes;
+package classes;
 
-import main.java.classes.models.*;
+import classes.models.*;
 
 public class Computer {
 
@@ -16,7 +16,7 @@ public class Computer {
 
     public String getInfo() {
         if (!isMotherBoardCompleted()) return "чего то не хватает";
-        if (isPowerUnitHasRequiredPower()) return "компуктер сгорел, не хватило блока питания";
+        if (!isPowerUnitHasRequiredPower()) return "компуктер сгорел, не хватило блока питания";
 
         String caseInfo = getCaseInfo();
         String cpuInfo = getCpuInfo();
@@ -41,7 +41,7 @@ public class Computer {
         long videoCardPower = motherBoard.getVideoCard().getPower();
         long needPower = isCpuPowerCompleted + videoCardPower;
 
-        return powerUnit.getPower() < needPower;
+        return powerUnit.getPower() >= needPower;
     }
 
     private String getCaseInfo() {

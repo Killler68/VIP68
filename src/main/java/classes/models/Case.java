@@ -1,6 +1,6 @@
-package main.java.classes.models;
+package classes.models;
 
-import main.java.classes.models.unitmodels.CaseColor;
+import classes.models.unitmodels.CaseColor;
 
 public class Case {
 

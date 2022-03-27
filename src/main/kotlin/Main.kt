@@ -1,3 +1,5 @@
+import yandex.DeclaringNewMethod
+
 fun main() {
-    println("kotlin main")
+    Application.start(DeclaringNewMethod::class.java)
 }

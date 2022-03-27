@@ -1,7 +1,7 @@
-package main.java.classes.models;
+package classes.models;
 
-import main.java.classes.models.unitmodels.CpuModels;
-import main.java.classes.models.unitmodels.Socket;
+import classes.models.unitmodels.CpuModels;
+import classes.models.unitmodels.Socket;
 
 public class Cpu {
 
