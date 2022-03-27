@@ -2,7 +2,7 @@ package yandex;
 
 public class Hamster {
     // Поля
-    String name = "Байт"; // Имя
+    String name = "Байт"; // имя
     int age = 2; // Возраст
     String color = "Рыжий"; // Цвет
     int weight = 350; // Вес
