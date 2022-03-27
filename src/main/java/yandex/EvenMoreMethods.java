@@ -34,7 +34,7 @@ public class EvenMoreMethods {
                 System.out.println("Выход");
                 break;
             } else {
-                System.out.println("Извините, такой команды пока нет.");
+                System.out.println("извините, такой команды пока нет.");
             }
         }
     }
