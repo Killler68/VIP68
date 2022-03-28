@@ -2,9 +2,8 @@ package classes.models.unitmodels;
 
 public enum DiskRpm {
     RPM7200("5400 rpm"),
-    RPM5400("7200 rpm"),
-    ;
-    private String diskRpm;
+    RPM5400("7200 rpm");
+    private final String diskRpm;
 
     DiskRpm(String diskRpm) {
         this.diskRpm = diskRpm;

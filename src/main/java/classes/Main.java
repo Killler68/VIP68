@@ -19,7 +19,5 @@ public class Main {
         Computer computer = new Computer(aCase, motherBoard, powerUnit);
 
         System.out.println(computer.getInfo());
-
     }
 }
-//

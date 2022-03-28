@@ -7,7 +7,7 @@ public enum DiscCapacity {
     TB1("1 tb"),
     TB2("2 tb");
 
-    private String memory;
+    private final String memory;
 
     DiscCapacity(String memory) {
         this.memory = memory;

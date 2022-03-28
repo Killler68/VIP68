@@ -6,7 +6,7 @@ public enum RamCapacity {
     GB16("16 gb"),
     GB32("32 gb");
 
-    private String ramCapacity;
+    private final String ramCapacity;
 
     RamCapacity(String ramCapacity) {
         this.ramCapacity = ramCapacity;
