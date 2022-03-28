@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class MyWorkCalculator {
     public static Scanner scanner = new Scanner(System.in);
 
-    public static double Calc() {
+    public  double Calc() {
 
         System.out.println("Введите первое число ");
         double a = scanner.nextDouble();
@@ -20,16 +20,12 @@ public class MyWorkCalculator {
 
     public static double Operation(String operator, double a, double b) {
 
-        switch (operator) {
-            case "+":
-                return a + b;
-            case "-":
-                return a - b;
-            case "*":
-                return a * b;
-            case "/":
-                return a / b;
-        }
-        return 0;
+        return switch (operator) {
+            case "+" -> a + b;
+            case "-" -> a - b;
+            case "*" -> a * b;
+            case "/" -> a / b;
+            default -> 0;
+        };
     }
 }

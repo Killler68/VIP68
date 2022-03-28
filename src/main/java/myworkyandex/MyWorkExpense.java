@@ -7,7 +7,7 @@ public class MyWorkExpense {
     public MyWorkExpense() {
         expenses = new double[7];
     }
-    public static double Expense(double num1, Scanner scanner, double[] expenses) {
+    public  double Expense(double num1, Scanner scanner, double[] expenses) {
         System.out.println("Выберите день недели " +
                 "1. ПН  2. ВТ   3. СР   4. ЧТ   5. ПТ   6. СБ   7. ВС");
         int days = scanner.nextInt();
@@ -18,17 +18,17 @@ public class MyWorkExpense {
         System.out.println(num1);
         return num1;
     }
-    public static void ExpenseDay(double[] expenses) {
+    public  void ExpenseDay(double[] expenses) {
         for (int i = 0; i < expenses.length; i++) {
             System.out.println("День " + (i + 1) + " Потрачено " + expenses[i]);
         }
 
     }
-    public static double MaxExpense(double[] expenses) {
+    public  double MaxExpense(double[] expenses) {
         double maxExpense = 0;
-        for (int i = 0; i < expenses.length; i++) {
-            if (expenses[i] > maxExpense) {
-                maxExpense = expenses[i];
+        for (double expens : expenses) {
+            if (expens > maxExpense) {
+                maxExpense = expens;
             }
         }
         return maxExpense;

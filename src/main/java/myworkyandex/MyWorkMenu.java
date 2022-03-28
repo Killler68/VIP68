@@ -2,7 +2,7 @@ package myworkyandex;
 
 public class MyWorkMenu {
 
-    public static void printMenu() {
+    public void printMenu() {
         System.out.println("Выберите операцию ");
         System.out.println("1. Посчитать валюту ");
         System.out.println("2. Дать совет ");

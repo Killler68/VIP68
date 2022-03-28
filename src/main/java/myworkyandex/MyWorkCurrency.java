@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class MyWorkCurrency {
     public static Scanner scanner = new Scanner(System.in);
 
-    public static void Currency(double num1) {
+    public  void Currency(double num1) {
         double ruble = 50;
         double EUR = 125.3;
         double USD = 110.7;
