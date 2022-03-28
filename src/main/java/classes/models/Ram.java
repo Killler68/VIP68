@@ -18,11 +18,6 @@ public class Ram {
     }
 
     public String getCapacity() {
-        return switch (capacity) {
-            case GB4 -> "4 gb";
-            case GB8 -> "8 gb";
-            case GB16 -> "16 gb";
-            case GB32 -> "32 gb";
-        };
+        return capacity.getRamCapacity();
     }
 }

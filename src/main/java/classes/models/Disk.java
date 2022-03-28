@@ -14,19 +14,11 @@ public class Disk {
     }
 
     public String getCapacity() {
-        return switch (capacity) {
-            case GB120 -> "120 gb";
-            case GB250 -> "250 gb";
-            case GB500 -> "500 gb";
-            case TB1 -> "1 tb";
-            case TB2 -> "2 tb";
-        };
+        return capacity.getMemory();
+
     }
 
     public String getRpm() {
-        return switch (rpm) {
-            case RPM5400 -> "5400 rpm";
-            case RPM7200 -> "7200 rpm";
-        };
+        return rpm.getDiskRpm();
     }
 }
