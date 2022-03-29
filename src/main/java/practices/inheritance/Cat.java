@@ -1,6 +1,8 @@
-package practices;
+package practices.inheritance;
 
-public class Cat extends Animal{
+import practices.inheritance.Animal;
+
+public class Cat extends Animal {
 
     public Cat(String say, int teeth, String wool) {
         setSay(say);

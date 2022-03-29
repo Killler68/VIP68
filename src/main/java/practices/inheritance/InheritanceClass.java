@@ -1,4 +1,7 @@
-package practices;
+package practices.inheritance;
+
+import practices.inheritance.Cat;
+import practices.inheritance.Cow;
 
 public class InheritanceClass {
     public static void main(String[] args) {
@@ -9,8 +12,6 @@ public class InheritanceClass {
 
         burenka.mu();
         cot.muy();
-
-
     }
 }
 

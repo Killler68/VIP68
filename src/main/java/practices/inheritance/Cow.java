@@ -1,4 +1,6 @@
-package practices;
+package practices.inheritance;
+
+import practices.inheritance.Animal;
 
 public class Cow extends Animal { // суперкласс Animal
 
@@ -6,7 +8,6 @@ public class Cow extends Animal { // суперкласс Animal
     public Cow(String say, int teeth) {
         setSay(say);
         setTeeth(teeth);
-
     }
 
     void mu() {

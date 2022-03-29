@@ -1,9 +1,10 @@
-package practices;
+package practices.inheritance;
 
 public class Animal {
     private String say = "...";
-    private int teeth = 0;
     private String wool = "...";
+    private int teeth = 0;
+
 
     public String getSay() {
         return say;
@@ -24,6 +25,7 @@ public class Animal {
     public String getWool() {
 return wool;
     }
+
     public void setWool(String wool) {
         this.wool = wool;
     }
