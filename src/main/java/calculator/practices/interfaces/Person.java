@@ -1,4 +1,4 @@
-package practices.interfaces;
+package calculator.practices.interfaces;
 
 public class Person implements Info {
     public String name;

@@ -1,7 +1,4 @@
-package practices.inheritance;
-
-import practices.inheritance.Cat;
-import practices.inheritance.Cow;
+package calculator.practices.inheritance;
 
 public class InheritanceClass {
     public static void main(String[] args) {

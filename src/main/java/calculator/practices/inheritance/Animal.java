@@ -1,4 +1,4 @@
-package practices.inheritance;
+package calculator.practices.inheritance;
 
 public class Animal {
     private String say = "...";

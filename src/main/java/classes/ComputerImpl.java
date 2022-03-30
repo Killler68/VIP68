@@ -2,18 +2,19 @@ package classes;
 
 import classes.models.*;
 
-public class Computer {
+public class ComputerImpl implements Computer {
 
-    private final Case aCase;
+    private final CaseImpl aCase;
     private final MotherBoard motherBoard;
-    private final PowerUnit powerUnit;
+    private final PowerUnitImpl powerUnit;
 
-    public Computer(Case aCase, MotherBoard motherBoard, PowerUnit powerUnit) {
+    public ComputerImpl(CaseImpl aCase, MotherBoard motherBoard, PowerUnitImpl powerUnit) {
         this.aCase = aCase;
         this.motherBoard = motherBoard;
         this.powerUnit = powerUnit;
     }
 
+    @Override
     public String getInfo() {
         if (!isMotherBoardCompleted()) return "чего то не хватает";
         if (!isPowerUnitHasRequiredPower()) return "компуктер сгорел, не хватило блока питания";
@@ -49,12 +50,12 @@ public class Computer {
     }
 
     private String getCpuInfo() {
-        Cpu cpu = motherBoard.getCpu();
+        CpuImpl cpu = motherBoard.getCpu();
         return "CPU: " + cpu.getCpuModel() + " " + cpu.getClock() + " мегагерц " + cpu.getCores() + " ядер\n";
     }
 
     private String getVideoCardInfo() {
-        VideoCard videoCard = motherBoard.getVideoCard();
+        VideoCardImpl videoCard = motherBoard.getVideoCard();
         return "VIDEO CARD: " + videoCard.getVideoCardModel() + " " + videoCard.getPower() + " ватт\n";
     }
 
@@ -75,12 +76,12 @@ public class Computer {
     }
 
     private String getDiscInfo() {
-        Disk disk = motherBoard.getDisk();
+        DiskImpl disk = motherBoard.getDisk();
         return "DISK: " + disk.getCapacity() + " " + disk.getRpm() + "\n";
     }
 
     private String getRamInfo() {
-        Ram ram = motherBoard.getRam();
+        RamImpl ram = motherBoard.getRam();
         return "RAM: " + ram.getType() + " " + ram.getCapacity() + "\n";
     }
 }

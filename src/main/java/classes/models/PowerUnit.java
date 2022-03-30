@@ -1,14 +1,5 @@
 package classes.models;
 
-public class PowerUnit {
-
-    private final long power;
-
-    public PowerUnit(long power) {
-        this.power = power;
-    }
-
-    public long getPower() {
-        return power;
-    }
+public interface PowerUnit {
+    long getPower();
 }

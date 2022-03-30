@@ -1,4 +1,4 @@
-package practices;
+package calculator.practices;
 
 public class WordThis {
     public static void main(String[] args) {

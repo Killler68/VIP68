@@ -1,4 +1,4 @@
-package practices.interfaces;
+package calculator.practices.interfaces;
 
 public class Game {
 
