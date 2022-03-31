@@ -5,20 +5,22 @@ import classes.models.unitmodels.Socket;
 public class MotherBoardImpl implements MotherBoardBuilder, MotherBoard {
 
     private final Socket socket;
-    private final RamImpl ram;
+    private final Ram ram;
     private final boolean rgb;
 
-    private CpuImpl cpu;
-    private DiskImpl disk;
-    private VideoCardImpl videoCard;
+    private Cpu cpu;
+    private Disk disk;
+    private VideoCard videoCard;
 
-    public MotherBoardImpl(Socket socket, RamImpl ram, boolean rgb) {
+    public MotherBoardImpl(Socket socket, Ram ram, boolean rgb) {
         this.socket = socket;
         this.ram = ram;
         this.rgb = rgb;
     }
 
-    public void addCpu(CpuImpl cpu) {
+    @Override
+
+    public void addCpu(Cpu cpu) {
         if (cpu.getSocket().equals(socket)) {
             this.cpu = cpu;
         } else {
@@ -26,32 +28,40 @@ public class MotherBoardImpl implements MotherBoardBuilder, MotherBoard {
     }
 
     public CpuImpl getCpu() {
-        return cpu;
+        return (CpuImpl) cpu;
     }
 
-    public void addDisc(DiskImpl disk) {
+    @Override
+
+    public void addDisc(Disk disk) {
         this.disk = disk;
     }
 
     public DiskImpl getDisk() {
-        return disk;
+        return (DiskImpl) disk;
     }
 
-    public void addVideoCard(VideoCardImpl videoCard) {
+    @Override
+
+    public void addVideoCard(VideoCard videoCard) {
         this.videoCard = videoCard;
     }
 
     public VideoCardImpl getVideoCard() {
-        return videoCard;
+        return (VideoCardImpl) videoCard;
     }
+
+    @Override
 
     public Socket getSocket() {
         return socket;
     }
 
     public RamImpl getRam() {
-        return ram;
+        return (RamImpl) ram;
     }
+
+    @Override
 
     public boolean getRgb() {
         return rgb;

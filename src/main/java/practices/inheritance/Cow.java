@@ -1,4 +1,4 @@
-package calculator.practices.inheritance;
+package practices.inheritance;
 
 public class Cow extends Animal { // суперкласс Animal
 

@@ -12,9 +12,13 @@ public class VideoCardImpl implements VideoCard {
         this.power = power;
     }
 
+    @Override
+
     public VideoCardModels getVideoCardModel() {
         return videoCardModel;
     }
+
+    @Override
 
     public long getPower() {
         return power;

@@ -10,6 +10,7 @@ public class CaseImpl implements Case {
         this.caseColor = caseColor;
     }
 
+    @Override
     public CaseColor getCaseColor() {
         return caseColor;
     }

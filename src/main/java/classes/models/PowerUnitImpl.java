@@ -8,6 +8,8 @@ public class PowerUnitImpl implements PowerUnit {
         this.power = power;
     }
 
+    @Override
+
     public long getPower() {
         return power;
     }

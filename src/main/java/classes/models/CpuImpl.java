@@ -3,7 +3,7 @@ package classes.models;
 import classes.models.unitmodels.CpuModels;
 import classes.models.unitmodels.Socket;
 
-public class CpuImpl implements Cpu{
+public class CpuImpl implements Cpu {
 
     private final CpuModels cpuModel;
     private final int cores;
@@ -23,17 +23,24 @@ public class CpuImpl implements Cpu{
         return cpuModel;
     }
 
+    @Override
     public int getCores() {
         return cores;
     }
+
+    @Override
 
     public long getClock() {
         return clock;
     }
 
+    @Override
+
     public long getTdp() {
         return tdp;
     }
+
+    @Override
 
     public Socket getSocket() {
         return socket;

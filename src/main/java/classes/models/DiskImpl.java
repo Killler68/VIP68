@@ -13,10 +13,14 @@ public class DiskImpl implements Disk {
         this.rpm = rpm;
     }
 
+    @Override
+
     public String getCapacity() {
         return capacity.getMemory();
 
     }
+
+    @Override
 
     public String getRpm() {
         return rpm.getDiskRpm();

@@ -13,5 +13,5 @@ public interface MotherBoard {
 
     DiskImpl getDisk();
 
-    CpuImpl getCpu();
+    Cpu getCpu();
 }

@@ -1,4 +1,4 @@
-package calculator.practices;
+package practices;
 
 public class Human {
         String name; //name объекта

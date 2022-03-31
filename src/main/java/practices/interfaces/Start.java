@@ -1,4 +1,4 @@
-package calculator.practices.interfaces;
+package practices.interfaces;
 
     public class Start {
         public static void main(String[] args) {

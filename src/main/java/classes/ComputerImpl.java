@@ -4,11 +4,11 @@ import classes.models.*;
 
 public class ComputerImpl implements Computer {
 
-    private final CaseImpl aCase;
+    private final Case aCase;
     private final MotherBoard motherBoard;
-    private final PowerUnitImpl powerUnit;
+    private final PowerUnit powerUnit;
 
-    public ComputerImpl(CaseImpl aCase, MotherBoard motherBoard, PowerUnitImpl powerUnit) {
+    public ComputerImpl(Case aCase, MotherBoard motherBoard, PowerUnit powerUnit) {
         this.aCase = aCase;
         this.motherBoard = motherBoard;
         this.powerUnit = powerUnit;
@@ -50,7 +50,7 @@ public class ComputerImpl implements Computer {
     }
 
     private String getCpuInfo() {
-        CpuImpl cpu = motherBoard.getCpu();
+        CpuImpl cpu = (CpuImpl) motherBoard.getCpu();
         return "CPU: " + cpu.getCpuModel() + " " + cpu.getClock() + " мегагерц " + cpu.getCores() + " ядер\n";
     }
 

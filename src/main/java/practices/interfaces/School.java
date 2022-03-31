@@ -1,4 +1,4 @@
-package calculator.practices.interfaces;
+package practices.interfaces;
 
 public class School {
     public Study study;

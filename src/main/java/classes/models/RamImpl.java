@@ -13,9 +13,13 @@ public class RamImpl implements Ram {
         this.capacity = capacity;
     }
 
+    @Override
+
     public RamType getType() {
         return type;
     }
+
+    @Override
 
     public String getCapacity() {
         return capacity.getRamCapacity();

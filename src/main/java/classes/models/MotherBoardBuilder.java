@@ -1,9 +1,9 @@
 package classes.models;
 
 public interface MotherBoardBuilder {
-    void addVideoCard(VideoCardImpl videoCard);
+    void addVideoCard(VideoCard videoCard);
 
-    void addDisc(DiskImpl disk);
+    void addDisc(Disk disk);
 
-    void addCpu(CpuImpl cpu);
+    void addCpu(Cpu cpu);
 }
