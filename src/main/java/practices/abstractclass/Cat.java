@@ -1,6 +1,4 @@
-package practices.AbstractClass;
-
-import practices.AbstractClass.Animal;
+package practices.abstractclass;
 
 public  class Cat extends Animal {
     @Override

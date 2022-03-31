@@ -1,7 +1,4 @@
-package practices.AbstractClass;
-
-import practices.AbstractClass.Cat;
-import practices.AbstractClass.Dog;
+package practices.abstractclass;
 
 public class Start {
     public static void main(String[] args) {
