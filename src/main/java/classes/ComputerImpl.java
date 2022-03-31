@@ -50,7 +50,7 @@ public class ComputerImpl implements Computer {
     }
 
     private String getCpuInfo() {
-        CpuImpl cpu = (CpuImpl) motherBoard.getCpu();
+        Cpu cpu = motherBoard.getCpu();
         return "CPU: " + cpu.getCpuModel() + " " + cpu.getClock() + " мегагерц " + cpu.getCores() + " ядер\n";
     }
 
