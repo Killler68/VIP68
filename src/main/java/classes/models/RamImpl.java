@@ -14,13 +14,11 @@ public class RamImpl implements Ram {
     }
 
     @Override
-
     public RamType getType() {
         return type;
     }
 
     @Override
-
     public String getCapacity() {
         return capacity.getRamCapacity();
     }

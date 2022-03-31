@@ -16,7 +16,7 @@ public class Main {
         motherBoard.addCpu(cpu);
         motherBoard.addDisc(disk);
         motherBoard.addVideoCard(videoCard);
-        Computer computer = new ComputerImpl(aCase, (MotherBoard) motherBoard,  powerUnit);
+        Computer computer = new ComputerImpl(aCase, (MotherBoard) motherBoard, powerUnit);
 
         System.out.println(computer.getInfo());
     }

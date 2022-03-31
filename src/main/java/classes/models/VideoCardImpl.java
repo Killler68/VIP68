@@ -13,13 +13,11 @@ public class VideoCardImpl implements VideoCard {
     }
 
     @Override
-
     public VideoCardModels getVideoCardModel() {
         return videoCardModel;
     }
 
     @Override
-
     public long getPower() {
         return power;
     }

@@ -19,7 +19,6 @@ public class MotherBoardImpl implements MotherBoardBuilder, MotherBoard {
     }
 
     @Override
-
     public void addCpu(Cpu cpu) {
         if (cpu.getSocket().equals(socket)) {
             this.cpu = cpu;
@@ -27,42 +26,42 @@ public class MotherBoardImpl implements MotherBoardBuilder, MotherBoard {
         }
     }
 
-    public CpuImpl getCpu() {
-        return (CpuImpl) cpu;
+    @Override
+    public Cpu getCpu() {
+        return cpu;
     }
 
     @Override
-
     public void addDisc(Disk disk) {
         this.disk = disk;
     }
 
-    public DiskImpl getDisk() {
+    @Override
+    public Disk getDisk() {
         return (DiskImpl) disk;
     }
 
     @Override
-
     public void addVideoCard(VideoCard videoCard) {
         this.videoCard = videoCard;
     }
 
-    public VideoCardImpl getVideoCard() {
-        return (VideoCardImpl) videoCard;
+    @Override
+    public VideoCard getVideoCard() {
+        return videoCard;
     }
 
     @Override
-
     public Socket getSocket() {
         return socket;
     }
 
-    public RamImpl getRam() {
-        return (RamImpl) ram;
+    @Override
+    public Ram getRam() {
+        return ram;
     }
 
     @Override
-
     public boolean getRgb() {
         return rgb;
     }

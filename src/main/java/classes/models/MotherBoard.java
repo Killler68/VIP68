@@ -5,13 +5,13 @@ import classes.models.unitmodels.Socket;
 public interface MotherBoard {
     boolean getRgb();
 
-    RamImpl getRam();
+    Ram getRam();
 
     Socket getSocket();
 
-    VideoCardImpl getVideoCard();
+    VideoCard getVideoCard();
 
-    DiskImpl getDisk();
+    Disk getDisk();
 
     Cpu getCpu();
 }

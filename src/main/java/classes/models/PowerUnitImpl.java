@@ -9,7 +9,6 @@ public class PowerUnitImpl implements PowerUnit {
     }
 
     @Override
-
     public long getPower() {
         return power;
     }

@@ -55,7 +55,7 @@ public class ComputerImpl implements Computer {
     }
 
     private String getVideoCardInfo() {
-        VideoCardImpl videoCard = motherBoard.getVideoCard();
+        VideoCard videoCard = motherBoard.getVideoCard();
         return "VIDEO CARD: " + videoCard.getVideoCardModel() + " " + videoCard.getPower() + " ватт\n";
     }
 
@@ -76,12 +76,12 @@ public class ComputerImpl implements Computer {
     }
 
     private String getDiscInfo() {
-        DiskImpl disk = motherBoard.getDisk();
+        Disk disk = motherBoard.getDisk();
         return "DISK: " + disk.getCapacity() + " " + disk.getRpm() + "\n";
     }
 
     private String getRamInfo() {
-        RamImpl ram = motherBoard.getRam();
+        Ram ram = motherBoard.getRam();
         return "RAM: " + ram.getType() + " " + ram.getCapacity() + "\n";
     }
 }

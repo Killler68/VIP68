@@ -6,4 +6,5 @@ public interface Ram {
     RamType getType();
 
     String getCapacity();
+
 }

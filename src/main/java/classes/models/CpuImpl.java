@@ -29,19 +29,16 @@ public class CpuImpl implements Cpu {
     }
 
     @Override
-
     public long getClock() {
         return clock;
     }
 
     @Override
-
     public long getTdp() {
         return tdp;
     }
 
     @Override
-
     public Socket getSocket() {
         return socket;
     }
