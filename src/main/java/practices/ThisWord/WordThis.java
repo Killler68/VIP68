@@ -1,4 +1,4 @@
-package practices;
+package practices.ThisWord;
 
 public class WordThis {
     public static void main(String[] args) {

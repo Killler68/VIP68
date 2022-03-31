@@ -18,7 +18,7 @@ public class CpuImpl implements Cpu {
         this.tdp = tdp;
         this.socket = socket;
     }
-
+    @Override
     public CpuModels getCpuModel() {
         return cpuModel;
     }

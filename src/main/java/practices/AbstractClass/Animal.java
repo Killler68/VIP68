@@ -1,4 +1,4 @@
-package practices;
+package practices.AbstractClass;
 
 public abstract class Animal {
 

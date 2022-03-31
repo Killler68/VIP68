@@ -1,4 +1,4 @@
-package practices;
+package practices.ThisWord;
 
 public class Human {
         String name; //name объекта
