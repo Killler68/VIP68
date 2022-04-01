@@ -1,4 +1,4 @@
-package myworkyandex;
+package generics.example.myworkyandex;
 
 public class MyWorkMenu {
 

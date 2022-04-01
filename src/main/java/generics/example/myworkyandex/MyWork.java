@@ -1,6 +1,4 @@
-package myworkyandex;
-
-import java.util.Scanner;
+package generics.example.myworkyandex;
 
 public class MyWork {
 
