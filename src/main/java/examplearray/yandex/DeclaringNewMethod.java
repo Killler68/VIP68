@@ -1,4 +1,4 @@
-package yandex;
+package examplearray.yandex;
 
 import java.util.Scanner;
 public class DeclaringNewMethod {

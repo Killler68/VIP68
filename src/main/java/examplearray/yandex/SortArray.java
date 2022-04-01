@@ -1,4 +1,4 @@
-package yandex;
+package examplearray.yandex;
 
 import examplearray.ExampleArrays;
 import examplearray.models.User;

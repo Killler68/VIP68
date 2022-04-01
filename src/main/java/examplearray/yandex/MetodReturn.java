@@ -1,4 +1,4 @@
-package yandex;
+package examplearray.yandex;
 
 public class MetodReturn {
     public static void main(String[] args) {
