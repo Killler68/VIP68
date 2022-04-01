@@ -7,7 +7,6 @@ import java.util.List;
 public class TestGeneric {
     public static void main(String[] args) {
 
-
         GenericStorage<String, String, Integer, Integer> box = new GenericStorage<>();
         box.setItem1("Hello");
         box.setItem3(5);
