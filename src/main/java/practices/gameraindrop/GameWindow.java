@@ -17,6 +17,7 @@ public class GameWindow extends JFrame {
                 ImageIO.read(this.getClass().getResource("/Rosa.jpg")),
                 ImageIO.read(this.getClass().getResource("/Rosa1.png")),
                 ImageIO.read(this.getClass().getResource("/gameOver.jpg")));
+
         gameWindow.add(gameField);
         gameWindow.setVisible(true);// делает окно видимым
     }
