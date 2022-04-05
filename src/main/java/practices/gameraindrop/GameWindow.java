@@ -5,28 +5,30 @@ import javax.swing.*;
 import java.io.IOException;
 
 public class GameWindow extends JFrame {
-    private GameWindow gameWindow;
+    public static final int X = 200;
+    public static final int Y = 100;
     public static final int WIDTH = 900;
     public static final int HEIGHT = 900;
 
+    public GameWindow() throws IOException {
+        GameField gameField = createGameField();
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);//команда завершает программу при закрытии окна
+        setLocation(X, Y);//точка где появляется окно по x,y от слова File
+        setSize(WIDTH, HEIGHT);//размер окна, в пиксилях
+        setResizable(false);// не дает менять размер окна
+        setVisible(true);// делает окно видимым
+        setTitle("score");
+        add(gameField);
+    }
 
-    public void init() throws IOException {
-        gameWindow = new GameWindow();
-        gameWindow.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);//команда завершает программу при закрытии окна
-        gameWindow.setLocation(200, 100);//точка где появляется окно по x,y от слова File
-        gameWindow.setSize(WIDTH, HEIGHT);//размер окна, в пиксилях
-        gameWindow.setResizable(false);// не дает менять размер окна
-        GameField gameField = new GameField(
-                ImageIO.read(this.getClass().getResource("/NEBO.jpg")),
+    public GameField createGameField() throws IOException {
+        return new GameField((
+                ImageIO.read(this.getClass().getResource("/NEBO.jpg"))),
                 ImageIO.read(this.getClass().getResource("/gameOver.jpg")),
                 ImageIO.read(this.getClass().getResource("/Rosa.jpg"))
         );
-        // с помощью этого создалась аннотация
-        gameWindow.add(gameField);
-        gameWindow.setVisible(true);// делает окно видимым
-        gameWindow.setTitle("score");
-
     }
 }
+
 
 
