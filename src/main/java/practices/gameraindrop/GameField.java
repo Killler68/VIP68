@@ -10,14 +10,14 @@ public class GameField extends JPanel {
     private final Image background;
     private final Image gameOver;
     private final Image rainDrop;
-    private int backGroundX = 0;
-    private int backGroundY = 0;
+    private final int backGroundX = 0;
+    private final int backGroundY = 0;
     private int dropLeft = 200; // хранит координату х левого угла капли
     private float dropTop = -100; //  хранит координату у левого угла капли
-    private float Pace = 0.000000001f;
+    private final float Pace = 0.00000001f;
     private int dropV = 200;
-    private int dropTops = -100;
-    private int speed = 50;
+    private final int dropTops = -100;
+    private final int speed = 50;
 
     public GameField(Image background, Image gameOver, Image rainDrop) {
         this.background = background;
@@ -39,8 +39,8 @@ public class GameField extends JPanel {
         float deltaTime = (currentTime - lastFrameTime) * Pace;
         lastFrameTime = currentTime;
         dropTop = dropTop - dropV * deltaTime;
-        repaint();
         if (dropTop > GameWindow.HEIGHT) g.drawImage(gameOver, dropLeft, (int) dropTop, null); //gameOver
+        repaint();
 
     }
 
