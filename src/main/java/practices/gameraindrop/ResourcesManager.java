@@ -2,7 +2,6 @@ package practices.gameraindrop;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
-import java.io.IOException;
 import java.net.URL;
 
 public class ResourcesManager {
@@ -14,15 +13,23 @@ public class ResourcesManager {
     private static final URL DEFEAT = ResourcesManager.class.getResource("/gameOver.jpg");
     private static final URL RAINWATER = ResourcesManager.class.getResource("/Rosa.jpg");
 
-    public static Image sky() throws IOException {
-        return ImageIO.read(SKY);
+    public static Image sky() {
+        return getImage(SKY);
     }
 
-    public static Image defeat() throws IOException {
-        return ImageIO.read(DEFEAT);
+    public static Image defeat() {
+        return getImage(DEFEAT);
     }
 
-    public static Image rainWater() throws IOException {
-        return ImageIO.read(RAINWATER);
+    public static Image rainWater() {
+        return getImage(RAINWATER);
+    }
+
+    private static Image getImage(URL url) {
+        try {
+            return ImageIO.read(url);
+        } catch (Exception e) {
+            throw new IllegalArgumentException("resources not found");
+        }
     }
 }

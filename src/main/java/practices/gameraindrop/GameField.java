@@ -1,45 +1,46 @@
 package practices.gameraindrop;
 
+import org.jetbrains.annotations.NotNull;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class GameField extends JPanel {
-    private long lastFrameTime;
     private final Image background;
     private final Image gameOver;
     private final Image rainDrop;
-    private final int backGroundX = 0;
-    private final int backGroundY = 0;
-    private int dropLeft = 200; // хранит координату х левого угла капли
-    private float dropTop = -100; //  хранит координату у левого угла капли
-    private final float Pace = 0.00000001f;
-    private int dropV = 200;
-    private final int dropTops = -100;
-    private final int speed = 50;
+    private static final int BACK_GROUND_X = 0;
+    private static final int BACK_GROUND_Y = 0;
+    private static int dropLeft = 200; // хранит координату х левого угла капли
+    private static float dropTop = -100; //  хранит координату у левого угла капли
+    private static final float TIME_MULTIPLIER = 0.01f;
+    private static int dropV = 200;
+    private static final int dropTops = -100;
+    private static final int speed = 50;
+    private static final int gameOverX = 200;
+    private static final int gameOverY = 150;
 
     public GameField(Image background, Image gameOver, Image rainDrop) {
         this.background = background;
         this.gameOver = gameOver;
         this.rainDrop = rainDrop;
+        mouse();
     }
 
     protected void paintComponent(Graphics g) {
         graphic(g);
-        mouse();
+
     }
 
-    public void graphic(Graphics g) {
-        super.paintComponent(g);
-        long currentTime = System.nanoTime();
-        g.drawImage(background, backGroundX, backGroundY, null);
+    public void graphic(@NotNull Graphics g) {
+        long currentTime = System.currentTimeMillis();
+        g.drawImage(background, BACK_GROUND_X, BACK_GROUND_Y, null);
         g.drawImage(rainDrop, dropLeft, (int) dropTop, null);
-        lastFrameTime = System.nanoTime();
-        float deltaTime = (currentTime - lastFrameTime) * Pace;
-        lastFrameTime = currentTime;
+        float deltaTime = (currentTime - System.currentTimeMillis()) * TIME_MULTIPLIER;
         dropTop = dropTop - dropV * deltaTime;
-        if (dropTop > GameWindow.HEIGHT) g.drawImage(gameOver, dropLeft, (int) dropTop, null); //gameOver
+        if (dropTop > GameWindow.HEIGHT) g.drawImage(gameOver, gameOverX, gameOverY, null); //gameOver
         repaint();
 
     }
