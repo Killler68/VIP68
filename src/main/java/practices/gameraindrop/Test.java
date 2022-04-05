@@ -6,6 +6,7 @@ public class Test {
     public static void main(String[] args) throws IOException {
         GameWindow game1 = new GameWindow();
 
-        game1.Statistic();
+        game1.init();
+
     }
 }
