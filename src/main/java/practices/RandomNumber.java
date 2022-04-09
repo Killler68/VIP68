@@ -9,7 +9,6 @@ public class RandomNumber {
         System.out.println("Ваша задача угадать число ");
         for (int i = 10; i <= 30; i += 10) PlayLevel(i);
         System.out.println("Вы выиграли!!!");
-        scanner.close();
     }
 
     private static void PlayLevel(int range) {
