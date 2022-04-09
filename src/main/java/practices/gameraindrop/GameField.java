@@ -15,7 +15,7 @@ public class GameField extends JPanel {
     private static final int BACK_GROUND_Y = 0;
     private static int dropLeft = 200; // хранит координату х левого угла капли
     private static float dropTop = -100; //  хранит координату у левого угла капли
-    private static final float TIME_MULTIPLIER = 0.01f;
+    private static final float TIME_MULTIPLIER = 0.001f;
     private static int dropV = 200;
     private static final int dropTops = -100;
     private static final int speed = 50;
