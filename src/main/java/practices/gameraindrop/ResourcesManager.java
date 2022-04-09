@@ -11,7 +11,7 @@ public class ResourcesManager {
 
     private static final URL SKY = ResourcesManager.class.getResource("/NEBO.jpg");
     private static final URL DEFEAT = ResourcesManager.class.getResource("/gameOver.jpg");
-    private static final URL RAINWATER = ResourcesManager.class.getResource("/Rosa.jpg");
+    private static final URL RAINWATER = ResourcesManager.class.getResource("/rosa.png");
 
     public static Image sky() {
         return getImage(SKY);
