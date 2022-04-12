@@ -17,6 +17,7 @@ doIt("Kitty")
     // вызываем функцию
     getCat("barsik") // BARSIK12
     getCat("vaska")  // VASKA10
+    todo()
 }
 
 fun add(x: Int, y: Int): Int {
@@ -92,3 +93,7 @@ fun getCat(name: String){
 }
 // ------------------------------------------------------------------------------
 
+fun todo() {
+  //  TODO("реализуйте функциональность функции, которая должна ...")
+    println("hello")
+}
