@@ -1,7 +1,5 @@
 package practics.kotlinpractics
 
-import java.util.regex.Pattern
-
 fun main() {
     println(countLetters("AAAXXXXCCCCCFFFFFFFFGGGGGAAACVBDDHDBDDCCNHAAHH"))
 }
