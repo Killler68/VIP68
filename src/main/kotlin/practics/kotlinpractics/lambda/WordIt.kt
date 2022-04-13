@@ -26,27 +26,28 @@ fun charNumber() {
 
 }
 
-fun messageNum(): String {
+fun messageNum(): Pair<Int?, String?> { //TODO(Поменять цикл на nextInt)
     val a = Scanner(System.`in`)
+    var age: Int? = null
     println("Введите число ")
+    var name: String? = null
     for (i in a) {
-        return if (i < 5.toString()) {
-            "года"
-        } else {
-            "лет"
-        }
+        name = if (i < 5.toString()) "года" else "лет"
+        age = i.toInt()
+        break
     }
-    return a.toString()
+    return Pair(age, name)
 }
 
-
 fun an(): String {
-    val messageFunction: (String, Int) -> String =
+    val num = messageNum()
+
+    val messageFunction: (String, Int?) -> String =
         { catName, age ->
             val year = 2022
-            "$catName! Добро пожаловать в $year. Тебе в этом $year году исполнилось $age ${messageNum()}"
+            "$catName! Добро пожаловать в $year. Тебе в этом $year году исполнилось $age ${num.second}"
         }
-    return messageFunction("Уголек", 4)
+    return messageFunction("Уголек", num.first)
 
 }
 
