@@ -1,5 +1,7 @@
 package practics.kotlinpractics
 
+import java.util.*
+
 fun main() {
     val barsik: Cat = Cat("Барсик", 1100, "Британский")
     barsik.weight = 900
@@ -9,9 +11,13 @@ fun main() {
 
     println(manul.name)
     val redCat: RedCat = RedCat("Рыжик", 3, "МейнКун")
-    println("${redCat.breed} ${redCat.activities}")
+    println("${redCat.breed} ${redCat.sleep()}")
     val blackCat: BlackCat = BlackCat("", 4, "Шотландец")
     println(blackCat.name)
+    val random = Random()
+    println(random.nextInt(100))
+val a = Person("Tom")
+
 }
 
 class Cat(val name: String, var weight: Int, val breed: String) {
@@ -42,11 +48,17 @@ val manul = WildCat("Manulik", 3500, "Uknown")
 
 class RedCat(val name: String, var weight: Int, breedParam: String) {
     var activities = arrayOf("play")
-    fun sleep() {
-        println(if (weight < 1000) "Сопит " else " Храпит ")
+    fun sleep(): String {
+        return if (weight < 1000) {
+            "Сопит "
+        } else {
+            " Храпит "
+        }
+
     }
 
     val breed = breedParam.toUpperCase()
+
 }
 
 class BlackCat(val name: String, var weight: Int, val breedParam: String) {

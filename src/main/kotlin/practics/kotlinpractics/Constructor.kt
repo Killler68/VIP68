@@ -1,4 +1,5 @@
 package practics.kotlinpractics
+import java.util.Random
 
 
 fun main() {
