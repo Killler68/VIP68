@@ -3,7 +3,6 @@ package practics.kotlinpractics
 
 fun main() {
 
-
     val tom: Person = Person("Tom")
     val bob: Person = Person("Bob", 45)
 
@@ -43,12 +42,15 @@ open class RadCat(val name: String) { //суперкласс
 class SeaRedCat(name: String) : RadCat(name) {
     val a = 5
 }
+
 //----------------ВТОРИЧНЫЕ КОНСТРУКТОРЫ-----------------------------
 class MyCat(var name: String, var age: Int, var address: String) {
     var email: String = ""
-    constructor(name: String,  age: Int,  address: String, email: String) : this(name,age,address) {
+
+    constructor(name: String, age: Int, address: String, email: String) : this(name, age, address) {
         this.email = email
     }
+
     var vaska1 = MyCat("Васька", 7, "Tambov", "@mail.ru")
     var vaska2 = MyCat("Васька", 7, "Tambov")
 
