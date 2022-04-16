@@ -1,0 +1,4 @@
+package examplemvvm
+
+class Model {
+}
