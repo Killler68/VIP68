@@ -7,7 +7,9 @@ fun main() {
 class View {
 
     private val model: Model = Model()
-    private val viewModel: ViewModel = ViewModel(model)
+    private val model1: Model1 = Model1()
+
+    private val viewModel: ViewModel = ViewModel(model, model1)
 
     fun init() {
         viewModel.data.subscribe(::showData)
@@ -20,5 +22,7 @@ class View {
             println(it)
         }
     }
+
+
 }
 

@@ -1,7 +1,7 @@
 package practics.kotlinpractics
 
 fun main() {
-    println( hasPrefix("prefix"))//все кроме prefix выдает false
+    println(hasPrefix("prefix"))//все кроме prefix выдает false
     val x = 3
     when (x) {
         1 -> print("x == 1")
@@ -38,10 +38,10 @@ fun main() {
 
 
 }
-fun hasPrefix(x: Any) = when(x) {
+
+fun hasPrefix(x: Any) = when (x) {
     is String -> x.startsWith("prefix")
     else -> false
-
 }
 
 
